@@ -1,0 +1,16 @@
+production:
+  SQLALCHEMY_DATABASE_URI: postgresql://postgres:postgres@localhost:5432/flask-restplus-demo
+  FLASK_HOST: 0.0.0.0
+  FLASK_PORT: 5000
+  FLASK_DEBUG: True
+  FLASK_USE_RELOADER: True
+  FLASK_SESSION_SECRET_KEY: 'correct horse battery staple'
+  AUDIT_REQUEST_BODIES: False
+  SEED_DATA_ENABLED: True
+
+  passwords:
+    seed: abc123    # override with secrets
+    root: abc123    # override with secrets
+    admin: abc123   # override with secrets
+    minion: abc123  # override with secrets
+    guest: abc123   # override with secrets
